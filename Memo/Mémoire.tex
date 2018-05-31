@@ -208,12 +208,12 @@ De plus, d'autres diagrammes UML sont réutilisés sous forme étendue :
 
 \subsubsection{La relation entre UML et SYSML}
 
- SysML réutilise un sous-ensemble de UML 2.1, appelé "UML4SysML", qui représente environ la moitié du langage UML. Une partie importante des concepts d'UML ont été écartés car ils n'étaient pas considérés comme pertinents pour les besoins du modèle de IS.
+ SysML réutilise un sous-ensemble de UML 2.1, appelé "UML4SysML", qui représente environ la moitié du langage UML. Une partie importante de l'UML des concepts ont été écartés car ils n'étaient pas considérés comme pertinents pour les besoins du modèle de SE.
 Certains des diagrammes réutilisés ont été inclus comme dans UML 2.1.1 .
-Ceux-ci incluent les diagrammes de machine d'état, séquence et les diagrammes de cas d'utilisation.
-D'autres diagrammes ont été étendus, tels que les diagrammes d'activité, afin de répondre aux besoins spécifiques des IS.
-De plus, SysML a omis certains diagrammes UML, à savoir les diagrammes d'objet, de composant, de déploiement,de communication, de temps et d'interactions.
-Les diagrammes de structure dont les diagrammes de classe et composition ont été fondamentalement modifiés et remplacés par des diagrammes de définition de blocs et diagrammes de blocs internes. Ces extensions sont basées sur le mécanisme de profilage UML standard, qui inclut les stéréotypes UML, extensions de diagramme UML et la bibliothèques de modèles. Le mécanisme de profilage a été choisi sur d'autres mécanismes d'extension afin de tirer parti des outils existants basés sur UML pour la modélisation de systèmes. En outre, SysML ajoute deux nouveaux diagrammes, ceux-ci étant le diagramme d'exigences et le diagramme paramétrique, et intègre de nouvelles capacités de spécification liens tels que l'allocation. La relation entre UML et SysML est illustrée dans \ref{relationUS}.
+Ceux-ci incluent la machine d'état, la séquence et les diagrammes de cas d'utilisation.
+D'autres diagrammes ont été étendus, tels que les diagrammes d'activité, afin de répondre aux besoins spécifiques des SE.
+De plus, SysML a omis certains diagrammes UML, à savoir d'objet, de composant, de déploiement,de communication, de temps et d'interactions.
+Les diagrammes de structure dont diagramme de Classe et composition ont été fondamentalement modifiés et remplacés par des diagrammes de définition de blocs et diagrammes de blocs internes. Ces extensions sont basées sur le mécanisme de profilage UML standard, qui inclut les stéréotypes UML, extensions de diagramme UML et la bibliothèques de modèles. Le mécanisme de profilage a été choisi sur d'autres mécanismes d'extension afin de tirer parti des outils existants basés sur UML pour la modélisation de systèmes. En outre, SysML ajoute deux nouveaux diagrammes, ceux-ci étant diagrammes d'exigences et diagrammes paramétriques, et intègre de nouvelles capacités de spécification liens tels que l'allocation. La relation entre UML et SysML est illustrée dans \ref{relationUS}.
 
 
 \begin{figure}[H]
@@ -262,7 +262,21 @@ la condition d’activation que doit satisfaire les horloges pour franchir la tr
 
 \section{Modélisation des systèmes complexes}
  Dans cette partie, nous présentons des défis pour l'intégration et l'évaluation de la différence entre les techniques de spécification semi-formelles et formelles. En outre, nous présentons plusieurs formalismes de spécifications, des similitudes et des différences, ainsi que des possibilités de combiner de telles techniques. Le premier aspect critique du développement de logiciels basés sur les composants est la spécification qui décrit la fonctionnalité et le comportement du composant.
- 
+\subsection{Langage Naturel}
+Un langage naturel (LN) n’est pas non formel en lui-même. Il est défini par un ensemble de règles (de grammaire) et sur un vocabulaire fini bien que très large. Néanmoins, ce vocabulaire est évolutif et les pratiquants  d’une  langue  ne  s’accordent  pas  toujours  sur  les  règles grammaticales à respecter (ou à appliquer) ni sur la sémantique qui leur est associée.
+Le  langage  naturel  est  le  langage  qui  est  parlé  ou  écrit  (français,anglais  ...)  pour  communiquer.  Tout  langage  naturel  est  facilement utilisable  et compréhensible  par  un  humain  parlant  ce  langage,  ce
+qui  en  fait  le  moyen  le  plus  simple  et  direct  pour  communiquer  et exprimer ses besoins ou la perception d’un problème.
+Le langage naturel est sans doute le langage le plus expressif. 
+Son écriture donne la possibilité d’exprimer une même idée en la formulant  de  différentes  manières  et  d’avoir  pour  une  même  formulation plusieurs sens.  Cela  peut  donner  lieu  à  des  problèmes  de  communication  dus  à  des  interprétations  multiples.  La  compréhension  du
+sens d’un énoncé demande parfois au lecteur, un effort d’interprétation ou d’inférence en fonction d’un contexte particulier.
+La compréhension du sens fait souvent appel à des connaissances implicites et extérieures à l’énoncé. En outre, dans le cas d’une collaboration en domaine pluridisciplinaire, la terminologie utilisée peut différer et donc poser des problèmes de communication et de compréhension.
+La richesse des langages naturels, ainsi que l’interprétation variable du  sens  terminologique  et  grammatical  des  formulations  possibles font  que  les  spécifications  écrites  en  langage  naturel  sont  connues pour  être  ambiguës.  Les  spécifications  LN  sont  aussi  connues  pour pouvoir  véhiculer  des  informations  pertinentes  de  façon  implicite.
+Dans ce cas, l’appel à des connaissances extérieures aux textes ainsi qu’un effort de déduction sont nécessaires pour la compréhension de la spécification et peuvent malgré tout conduire à une mauvaise interprétation.
+Du fait de leurs ambiguïtés et de leur contenu implicite, les spécifications en LN posent le problème d’être difficilement interprétables par une machine. Il n’est donc pas possible d’effectuer de manière directe une vérification automatique prenant ce genre de spécification en entrée.
+
+
+
+
 \subsection{Langage Semi-Formel}
 \subsection{Langage Formel}
 
