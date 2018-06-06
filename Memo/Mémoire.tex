@@ -224,6 +224,21 @@ Les diagrammes de structure dont diagramme de Classe et composition ont été fo
 \end{center}
 \end{figure}
 
+\subsection{Diagramme de Séquence}
+Les diagrammes de séquence décrivent les interactions au sein d'un système en utilisant la communication entre des entités représentées par un rectangle à partir duquel les lignes de vie descendent. Une interaction est une communication basée sur l'échange de messages sous la forme d'appels d'opérations ou signaux disposés dans un ordre temporel. Les objets assument le rôle d’entités dans la communication. Le corps d'une ligne de vie représente le cycle de vie de son objet correspondant.
+Un message est utilisé pour transmettre des informations et il peut être échangé entre deux lignes de vie dans deux modes possibles : synchrone et asynchrone. Il existe quatre types de messages : appel d'opération, signal, réponse et création/destruction d'objet. Le message est symbolisé par une flèche étiquetée pointant de l'expéditeur vers le récepteur. De plus, le diagramme peut contenir des exigences de temps, placées à gauche du diagramme, ce qui permet de spécifier combien de temps une opération a besoin pour terminer son exécution.
+En plus des lignes de vie et des messages, les diagrammes de séquence peuvent définir d'autres constructions afin d'organiser les interactions modélisées. L'abstraction de l’unité d'interaction générale est appelée "fragment d'interaction", qui représente une généralisation d'un « fragment combiné ». Ce dernier définit une expression du « fragment d’interaction » et consiste en un opérateur d'interaction et des opérandes d'interaction. Les fragments combinés permettent une illustration compacte des traces de messages échangés.
+Ils sont représentés par un cadre rectangulaire avec des lignes pleines et un petit pentagone le coin supérieur gauche montrant l'opérateur avec des lignes pointillées séparant les opérandes. D'une part, un opérande d'interaction contient un ensemble ordonné de fragments d'interactions. D'autre part, les opérateurs d'interaction incluent, mais ne sont pas limités à, des opérateurs d'exécution conditionnelle (désigné par "alt"), des opérateurs de bouclage (désigné par "loop") et des opérateurs d'exécution parallèle (désigné par "par"). La Figure \ref{syntaxe_seq} illustre un sous-ensemble de la syntaxe des diagrammes de séquence. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{figures/syntaxe_diagram.png}
+\caption{Syntaxe du diagramme de séquence}
+\label{syntaxe_seq}
+\end{center}
+\end{figure}
+
+
 \section{Automates temporisés}
 
  Les automates temporisés reprennent
